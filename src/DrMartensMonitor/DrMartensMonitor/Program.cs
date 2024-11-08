@@ -1,3 +1,5 @@
+using DrMartensMonitor.Controls;
+
 namespace DrMartensMonitor
 {
   internal static class Program
@@ -11,7 +13,8 @@ namespace DrMartensMonitor
       // To customize application configuration such as set high DPI settings or default font,
       // see https://aka.ms/applicationconfiguration.
       ApplicationConfiguration.Initialize();
-      Application.Run(new Form1());
+      //Application.Run(new Form1());
+      AppCore.Ins.Init();
     }
   }
 }

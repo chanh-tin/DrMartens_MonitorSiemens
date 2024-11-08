@@ -15,4 +15,15 @@
     <ProjectReference Include="..\..\..\libs\Libs ISoftTeam\iSoft.TraceData-main\subs\iSoft.Core\iSoft.Redis\iSoft.Redis.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.12" />
+    <PackageReference Include="Microsoft.NETCore" Version="5.0.0" />
+  </ItemGroup>
+
 </Project>
