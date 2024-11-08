@@ -1,0 +1,50 @@
+version: "3"
+
+networks:
+  drmt-net:
+    external: true
+  db-net:
+    external: true
+  cache-net:
+    external: true
+  broker-net:
+    external: true
+  search-net:
+    external: true
+
+volumes:
+  drmt-mms-main-wwwroot:
+
+services:
+
+  drmt-mms-main:
+    image: vm01.i-soft.com.vn:5000/drmt-mms-main:dev
+    env_file:
+      - env.dev
+    container_name: drmt-mms-main
+    restart: always
+    build:
+      context: ./../
+      dockerfile: src/DRMT.MMS.Main/Dockerfile
+    networks:
+      - drmt-net
+      - db-net
+      - cache-net
+      - broker-net
+      - search-net
+    labels:
+      org.label-schema.group: "monitoring"
+    ports:
+      - 2802:80
+      - 12802:443
+    volumes:
+      - "drmt-mms-main-wwwroot:/app/wwwroot"
+    deploy:
+      resources:
+        limits:
+          memory: 2600M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "10"

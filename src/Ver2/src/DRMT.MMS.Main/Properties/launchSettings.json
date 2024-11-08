@@ -1,0 +1,22 @@
+{
+    "profiles": {
+        "DRMT.Main": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchUrl": "http://localhost:2802",
+            "applicationUrl": "https://localhost:12802;http://localhost:2802"
+        },
+        "Docker": {
+            "commandName": "Docker",
+            "launchBrowser": true,
+            "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+            "publishAllPorts": true,
+            "useSSL": true,
+            "httpPort": 2802,
+            "sslPort": 12802
+        }
+    }
+}
