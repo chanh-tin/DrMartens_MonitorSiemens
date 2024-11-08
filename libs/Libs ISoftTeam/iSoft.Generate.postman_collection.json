@@ -1,0 +1,3690 @@
+{
+	"info": {
+		"_postman_id": "3c1c519b-7f0f-4095-9dd3-a693d6d3bde3",
+		"name": "iSoft.Generate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33832231",
+		"_collection_link": "https://i-soft.postman.co/workspace/New-Team-Workspace~156b99f1-d7a6-4331-bcae-4f451e5c88cc/collection/27719554-3c1c519b-7f0f-4095-9dd3-a693d6d3bde3?action=share&source=collection_link&creator=33832231"
+	},
+	"item": [
+		{
+			"name": "Generate Source Code",
+			"item": [
+				{
+					"name": "OEE",
+					"item": [
+						{
+							"name": "Line",
+							"item": [
+								{
+									"name": "Line",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accesstoken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "EntityName",
+													"value": "Line",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+											"host": [
+												"{{generate}}"
+											],
+											"path": [
+												"GenerateSource",
+												"generate-crud-entity"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "get-device-list",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+													"host": [
+														"{{main}}"
+													],
+													"path": [
+														"device",
+														"get-device-list"
+													],
+													"query": [
+														{
+															"key": "page",
+															"value": "1"
+														},
+														{
+															"key": "pageSize",
+															"value": "2"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Length",
+													"value": "1238"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Kestrel"
+												},
+												{
+													"key": "api-supported-versions",
+													"value": "1.0"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Factory",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accesstoken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "EntityName",
+													"value": "Factory",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+											"host": [
+												"{{generate}}"
+											],
+											"path": [
+												"GenerateSource",
+												"generate-crud-entity"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "get-device-list",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+													"host": [
+														"{{main}}"
+													],
+													"path": [
+														"device",
+														"get-device-list"
+													],
+													"query": [
+														{
+															"key": "page",
+															"value": "1"
+														},
+														{
+															"key": "pageSize",
+															"value": "2"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Length",
+													"value": "1238"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Kestrel"
+												},
+												{
+													"key": "api-supported-versions",
+													"value": "1.0"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Workshop",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accesstoken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "EntityName",
+													"value": "Workshop",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+											"host": [
+												"{{generate}}"
+											],
+											"path": [
+												"GenerateSource",
+												"generate-crud-entity"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "get-device-list",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+													"host": [
+														"{{main}}"
+													],
+													"path": [
+														"device",
+														"get-device-list"
+													],
+													"query": [
+														{
+															"key": "page",
+															"value": "1"
+														},
+														{
+															"key": "pageSize",
+															"value": "2"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Length",
+													"value": "1238"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Kestrel"
+												},
+												{
+													"key": "api-supported-versions",
+													"value": "1.0"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "Machine",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{accesstoken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "EntityName",
+													"value": "Machine",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+											"host": [
+												"{{generate}}"
+											],
+											"path": [
+												"GenerateSource",
+												"generate-crud-entity"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "get-device-list",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+													"host": [
+														"{{main}}"
+													],
+													"path": [
+														"device",
+														"get-device-list"
+													],
+													"query": [
+														{
+															"key": "page",
+															"value": "1"
+														},
+														{
+															"key": "pageSize",
+															"value": "2"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Length",
+													"value": "1238"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Date",
+													"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+												},
+												{
+													"key": "Server",
+													"value": "Kestrel"
+												},
+												{
+													"key": "api-supported-versions",
+													"value": "1.0"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "MachineBlockData",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "MachineBlockData",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "OeePoint",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "OeePoint",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "OeePointConfig",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InJvb3QiLCJyb2xlIjoiUm9vdCIsIlVzZXJJZCI6IjAiLCJVc2VybmFtZSI6InJvb3QiLCJQcm9qZWN0cyI6IlNvdXJjZUJhc2VCRSxQUlBPIiwibmJmIjoxNzIzNDQ4NzM5LCJleHAiOjE3MjQwNTM1MzksImlhdCI6MTcyMzQ0ODczOX0.wpXmSt-ugwhna_HEPU-QuiODsW29klcZ_ax99KurNWY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "OeePointConfig",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "MachineLoss",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "MachineLoss",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "MachineLossGroup",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "MachineLossGroup",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "MachineLossPosition",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "MachineLossPosition",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "MachineLossDescribe",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "MachineLossDescribe",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "BreakTime",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "BreakTime",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Shift",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Shift",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "MasterDataOptionFilter",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "MasterDataOptionFilter",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "WhiteListToken",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "MasterDataOptionFilter",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "OeeWorld",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "OeeWorld",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Base",
+					"item": [
+						{
+							"name": "Example001",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Example001",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Example002",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Example002",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Example003",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Example003",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "User",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "User",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Language",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Language",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "TranslateLanguage",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "TranslateLanguage",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Country",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Country",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Timezone",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Timezone",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Feature",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Feature",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "FeatureLicense",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "FeatureLicense",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "License",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "License",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "LicenseType",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "LicenseType",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "SoftwareCopy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "SoftwareCopy",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Software",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "OeePointConfig",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Example004",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Example004",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Permission",
+					"item": [
+						{
+							"name": "PermissionDetail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "PermissionDetail",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Permission",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "Permission",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "UserGroup",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "UserGroup",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Others",
+					"item": [
+						{
+							"name": "FrontendData",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{accesstoken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "EntityName",
+											"value": "FrontendData",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+									"host": [
+										"{{generate}}"
+									],
+									"path": [
+										"GenerateSource",
+										"generate-crud-entity"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "get-device-list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+											"host": [
+												"{{main}}"
+											],
+											"path": [
+												"device",
+												"get-device-list"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "2"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Length",
+											"value": "1238"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Kestrel"
+										},
+										{
+											"key": "api-supported-versions",
+											"value": "1.0"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "NewEntity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accesstoken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "EntityName",
+									"value": "NewEntity",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{generate}}/GenerateSource/generate-crud-entity",
+							"host": [
+								"{{generate}}"
+							],
+							"path": [
+								"GenerateSource",
+								"generate-crud-entity"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get-device-list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{main}}/device/get-device-list?page=1&pageSize=2",
+									"host": [
+										"{{main}}"
+									],
+									"path": [
+										"device",
+										"get-device-list"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "1238"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 Nov 2023 16:48:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "api-supported-versions",
+									"value": "1.0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"$id\": \"1\",\n    \"status\": \"Success\",\n    \"code\": null,\n    \"message\": null,\n    \"data\": {\n        \"$id\": \"2\",\n        \"totalRecord\": 88,\n        \"listData\": [\n            {\n                \"$id\": \"3\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 44,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 33,\n                \"Name\": \"Máy bơm tăng áp hệ process\",\n                \"SerialCode\": \"D-33\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"Máy bơm trên đường ốngchính hệ process\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            },\n            {\n                \"$id\": \"4\",\n                \"Supplier\": \"Vuletech\",\n                \"Model\": null,\n                \"MaxOperationTime\": 31104000,\n                \"OperationStartDate\": null,\n                \"RunTime\": 3600,\n                \"Manufacturer\": null,\n                \"ExpiryDate\": null,\n                \"Group\": null,\n                \"Category\": \"Motor\",\n                \"LineId\": 1,\n                \"Line\": null,\n                \"MachineId\": 2,\n                \"Machine\": null,\n                \"EquipmentId\": null,\n                \"Equipment\": null,\n                \"Parameters\": [],\n                \"MaintenanceHistories\": [],\n                \"Id\": 16,\n                \"Name\": \"MOTOR 3 PHASE VẶN NẮP 1\",\n                \"SerialCode\": \"D-16\",\n                \"CreatedAt\": null,\n                \"UpdatedAt\": null,\n                \"Description\": \"8. MOTOR 3 PHASE VĂN NẮP 1\",\n                \"DeletedFlag\": false,\n                \"isDelete\": null,\n                \"isEnable\": null,\n                \"CreatedBy\": null,\n                \"UpdatedBy\": null\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login root Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"accesstoken\", res.Data.AccessToken);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "root",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "vuletech@113",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{auth}}/auths/login",
+					"host": [
+						"{{auth}}"
+					],
+					"path": [
+						"auths",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

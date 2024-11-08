@@ -1,0 +1,36 @@
+version: "3"
+
+networks:
+  imag-net:
+    external: true
+  db-net:
+    external: true
+  cache-net:
+    external: true
+  broker-net:
+    external: true
+
+services:
+  isoft-tracedata:
+    image: vm01.i-soft.com.vn:5000/isoft-tracedata:dev
+    env_file:
+      - env.dev
+    container_name: isoft-tracedata
+    restart: always
+    build:
+      context: ./../
+      dockerfile: src/iSoft.TraceData/Dockerfile
+    networks:
+      - imag-net
+      - db-net
+      - cache-net
+      - broker-net
+    labels:
+      org.label-schema.group: "monitoring"
+    ports:
+      - 2706:80
+      - 12706:443
+    deploy:
+      resources:
+        limits:
+          memory: 600M

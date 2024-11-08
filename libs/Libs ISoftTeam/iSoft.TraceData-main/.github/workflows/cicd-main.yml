@@ -1,0 +1,30 @@
+name: iSoft.TraceData CI/CD Pipeline
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "*"
+
+jobs:
+  call_reusable_workflow:
+    uses: iSoft-Team/i-Soft.DevOpsStacks/.github/workflows/cicd-pipeline-reusable.yml@main
+    with:
+      # general
+      dockerfile_path: "src/iSoft.TraceData/Dockerfile" # docker file path
+      docker_image_name: "isoft-tracedata" # docker image name
+      image_registry: "vm01.i-soft.com.vn:5000" # image registry
+      repo_name: "iSoft.TraceData" # repo name
+
+      # build and push image
+      build_runner: '["self-hosted", "Linux", "i-soft", "build"]' # check runner label in your repo
+
+      # deploy to dev
+      run_dev: true # set to true if you want to run dev deployment
+      dev_runner: '["self-hosted", "Linux", "i-soft", "development"]' # check runner label in your repo
+      dev-deploy-script: "deploy/deploy-dev.sh" # dev deploy script
+
+
+      # deploy to prod
+      # prod_runner: '["self-hosted", "Linux", "i-soft", "production"]' # check runner label in your repo
+      # prod-deploy-script: "./script/production-deploy.sh"

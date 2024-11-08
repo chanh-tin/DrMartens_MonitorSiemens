@@ -1,0 +1,22 @@
+{
+    "profiles": {
+        "iSoft.Generate": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "launchUrl": "http://localhost:2205",
+            "applicationUrl": "https://localhost:12205;http://localhost:2205"
+        },
+        "Docker": {
+            "commandName": "Docker",
+            "launchBrowser": true,
+            "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+            "publishAllPorts": true,
+            "useSSL": true,
+            "httpPort": 2205,
+            "sslPort": 12205
+        }
+    }
+}
