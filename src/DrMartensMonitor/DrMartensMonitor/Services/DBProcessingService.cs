@@ -46,7 +46,7 @@ namespace DrMartensMonitor.Services
 
     public void InsertDBPayLoad(string nameMachine)
     {
-      DBDataMonitorRepository dBPayLoadRepository = new DBDataMonitorRepository(this._dbContext);
+      DBDataMonitorRepository dBDataMonitorRepository = new DBDataMonitorRepository(this._dbContext);
       DBDataMonitorEnity dB_DataMonitor = new DBDataMonitorEnity()
       {
         NameMachine = nameMachine,

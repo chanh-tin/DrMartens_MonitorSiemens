@@ -10,14 +10,14 @@ namespace DrMartensMonitor.Repository
 {
   public class DBDataMonitorRepository
   {
-    public DBDataMonitorRepository(CommonDBContext dbContext)
-        : base(dbContext)
-    {
+    //public DBDataMonitorRepository(CommonDBContext dbContext)
+    //    : base(dbContext)
+    //{
 
-    }
-    public Task<List<DBDataMonitorEnity>> GetAllWithRelations()
-    {
-      return _context.Set<DBDataMonitorEnity>().Include(x => x.ListRoiData).ToListAsync();
-    }
+    //}
+    //public Task<List<DBDataMonitorEnity>> GetAllWithRelations()
+    //{
+    //  return _context.Set<DBDataMonitorEnity>().Include(x => x.ListRoiData).ToListAsync();
+    //}
   }
 }
