@@ -24,7 +24,7 @@ namespace SourceBaseBE.MainService.Controllers
 			this.provider = provider;
 		}
 
-		[Authorize(Roles = "Root")]
+		//[Authorize(Roles = "Root")]
 		[HttpPost("create-database")]
 		public async Task<IActionResult> CreateDatabase()
 		{
@@ -42,7 +42,7 @@ namespace SourceBaseBE.MainService.Controllers
 			}
 		}
 
-		[Authorize(Roles = "Root")]
+		//[Authorize(Roles = "Root")]
 		[HttpPost("delete-database")]
 		public async Task<IActionResult> DeleteDatabase()
 		{
