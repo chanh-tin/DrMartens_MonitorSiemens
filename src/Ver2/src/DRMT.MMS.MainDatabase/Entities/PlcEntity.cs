@@ -1,13 +1,7 @@
 ﻿using iSoft.Common.Enums;
 using iSoft.Database.Entities;
 using iSoft.Database.Extensions;
-using SourceBaseBE.Database.Entities;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SourceBaseBE.Database.Entities
 {
@@ -16,7 +10,7 @@ namespace SourceBaseBE.Database.Entities
   {
     public string Name { get; set; }
     public string? IpAddress { get; set; }
-    public int? Port {  get; set; }
+    public int? Port { get; set; }
 
     [NotMapped]
     public List<long>? DataBlockIds { get; set; } = new List<long>();
