@@ -122,6 +122,9 @@ namespace SourceBaseBE.ServerApp
             services.AddScoped<Example002Service>();
             services.AddScoped<Example003Service>();
             services.AddScoped<Example001TransService>();
+            services.AddScoped<DataBlockService>();
+            services.AddScoped<PlcService>();
+            services.AddScoped<TagService>();
             /*[GEN-44]*/
 
             services.AddHostedService<CheckConnectRedisJob>();

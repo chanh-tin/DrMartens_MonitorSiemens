@@ -15,6 +15,9 @@ namespace SourceBaseBE.Database.DBContexts
         public virtual DbSet<Example002Entity> I_Example002s { get; set; }
         public virtual DbSet<Example003Entity> I_Example003s { get; set; }
         public virtual DbSet<Example001TransEntity> I_Example001Trans { get; set; }
+        public virtual DbSet<DataBlockEntity> DataBlocks { get; set; }
+        public virtual DbSet<PlcEntity> PLCs { get; set; }
+        public virtual DbSet<TagEntity> Tags { get; set; }
         /*[GEN-43]*/
 
         public CommonDBContext()
@@ -46,6 +49,22 @@ namespace SourceBaseBE.Database.DBContexts
                                 .HasForeignKey("Example001Id")
                                 .OnDelete(DeleteBehavior.ClientSetNull)
                         );
+            modelBuilder.Entity<DataBlockEntity>()
+                        .HasMany(e => e.ListPlc)
+                        .WithMany(e => e.ListDataBlock)
+                        .UsingEntity<Dictionary<string, object>>(
+                            "REF_DataBlock_Plc",
+                            j => j
+                                .HasOne<PlcEntity>()
+                                .WithMany()
+                                .HasForeignKey("PlcId")
+                                .OnDelete(DeleteBehavior.ClientSetNull),
+                            j => j
+                                .HasOne<DataBlockEntity>()
+                                .WithMany()
+                                .HasForeignKey("DataBlockId")
+                                .OnDelete(DeleteBehavior.ClientSetNull)
+                        );
             /*[GEN-15]*/
 
             modelBuilder.Entity<Example001Entity>()
@@ -57,6 +76,11 @@ namespace SourceBaseBE.Database.DBContexts
                         .HasOne(e => e.ItemBase)
                         .WithMany(e => e.ListExample001Trans)
                         .HasForeignKey(e => e.BaseId);
+            modelBuilder.Entity<TagEntity>()
+                        .HasOne(e => e.ItemDataBlock)
+                        .WithMany(e => e.ListTag)
+                        .HasForeignKey(e => e.DataBlockId)
+                        .OnDelete(DeleteBehavior.ClientSetNull);
             /*[GEN-16]*/
 
             // CreatedAt
@@ -64,6 +88,9 @@ namespace SourceBaseBE.Database.DBContexts
             modelBuilder.Entity<Example002Entity>().HasIndex(x => x.CreatedAt);
             modelBuilder.Entity<Example003Entity>().HasIndex(x => x.CreatedAt);
             modelBuilder.Entity<Example001TransEntity>().HasIndex(x => x.CreatedAt);
+            modelBuilder.Entity<DataBlockEntity>().HasIndex(x => x.CreatedAt);
+            modelBuilder.Entity<PlcEntity>().HasIndex(x => x.CreatedAt);
+            modelBuilder.Entity<TagEntity>().HasIndex(x => x.CreatedAt);
             /*[GEN-22]*/
 
             // UpdateAt
@@ -71,6 +98,9 @@ namespace SourceBaseBE.Database.DBContexts
             modelBuilder.Entity<Example002Entity>().HasIndex(x => x.UpdatedAt);
             modelBuilder.Entity<Example003Entity>().HasIndex(x => x.UpdatedAt);
             modelBuilder.Entity<Example001TransEntity>().HasIndex(x => x.UpdatedAt);
+            modelBuilder.Entity<DataBlockEntity>().HasIndex(x => x.UpdatedAt);
+            modelBuilder.Entity<PlcEntity>().HasIndex(x => x.UpdatedAt);
+            modelBuilder.Entity<TagEntity>().HasIndex(x => x.UpdatedAt);
             /*[GEN-23]*/
 
             // Order
@@ -78,6 +108,9 @@ namespace SourceBaseBE.Database.DBContexts
             modelBuilder.Entity<Example002Entity>().HasIndex(x => x.Order);
             modelBuilder.Entity<Example003Entity>().HasIndex(x => x.Order);
             modelBuilder.Entity<Example001TransEntity>().HasIndex(x => x.Order);
+            modelBuilder.Entity<DataBlockEntity>().HasIndex(x => x.Order);
+            modelBuilder.Entity<PlcEntity>().HasIndex(x => x.Order);
+            modelBuilder.Entity<TagEntity>().HasIndex(x => x.Order);
             /*[GEN-24]*/
 
             // DeletedFlag
@@ -85,6 +118,9 @@ namespace SourceBaseBE.Database.DBContexts
             modelBuilder.Entity<Example002Entity>().HasIndex(x => x.DeletedFlag);
             modelBuilder.Entity<Example003Entity>().HasIndex(x => x.DeletedFlag);
             modelBuilder.Entity<Example001TransEntity>().HasIndex(x => x.DeletedFlag);
+            modelBuilder.Entity<DataBlockEntity>().HasIndex(x => x.DeletedFlag);
+            modelBuilder.Entity<PlcEntity>().HasIndex(x => x.DeletedFlag);
+            modelBuilder.Entity<TagEntity>().HasIndex(x => x.DeletedFlag);
             /*[GEN-25]*/
 
 
